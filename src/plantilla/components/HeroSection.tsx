@@ -23,7 +23,7 @@ export const HeroSection = ({ data }: HeroSectionProps) => {
           {data.descripcion}
         </p>
         <a
-          className="rounded-xl inline-flex items-center justify-center px-8 py-4 bg-muted-gold text-primary font-label-md hover:bg-surface transition-colors duration-300"
+          className="rounded-xl inline-flex items-center justify-center px-8 py-4 bg-[#1d3655] text-primary font-label-md hover:bg-surface transition-colors duration-300"
           href={data.ctaHref}
         >
           {data.ctaLabel}

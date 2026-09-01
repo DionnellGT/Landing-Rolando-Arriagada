@@ -14,7 +14,7 @@ export const CONTACT_INFO_FALLBACK = {
   whatsappNumber: "+56 9 7914 8372",
   whatsappLink: "https://wa.me/56979148372",
   phone: "+56 9 7914 8372",
-  email: "conecta@ninabelen.cl",
+  email: "rolando.a@elavellano.cl",
 };
 
 export const NAV_LINKS = [

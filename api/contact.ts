@@ -16,6 +16,7 @@ export default async function handler(req: any, res: any) {
       email,
       proyecto,
       tiempoEntrega,
+      formaDePago,
     } = req.body;
 
     if (!nombre || !telefono || !email) {
@@ -37,6 +38,7 @@ export default async function handler(req: any, res: any) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Proyecto:</strong> ${proyecto || "No especificado"}</p>
         <p><strong>Tiempo de entrega:</strong> ${tiempoEntrega || "No especificado"}</p>
+        <p><strong>Forma de Pago:</strong> ${formaDePago || "No especificado"}</p>
       `,
     });
 

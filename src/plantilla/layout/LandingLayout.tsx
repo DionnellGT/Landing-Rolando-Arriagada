@@ -6,6 +6,7 @@ import { useNavigation } from "../hook/useNavigation";
 import { useFooter } from "../hook/useFooter";
 import { useLandingBundle } from "../hook/useLandingBundle";
 import { useMobileMenu } from "../hook/useMobileMenu";
+import { WhatsAppButtonFixed } from "../components/WhatsAppButtonFixed";
 
 export const LandingLayout = () => {
   const { isLoading, isError } = useLandingBundle();
@@ -47,6 +48,9 @@ export const LandingLayout = () => {
       <Outlet />
 
       {footerData && <Footer data={footerData} />}
+      <div className="block md:hidden">
+        <WhatsAppButtonFixed whatsappNumber={navigationData?.contact.whatsappNumber} />
+      </div>
     </div>
   );
 };
